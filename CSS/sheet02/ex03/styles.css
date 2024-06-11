@@ -1,0 +1,13 @@
+body {
+	display: flex;
+}
+
+.sidebar {
+	background-color: grey;
+	width: 200px;
+	height: 400px;
+}
+
+.main-content {
+	flex: 1;
+}
