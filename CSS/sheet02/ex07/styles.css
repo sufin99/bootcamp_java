@@ -1,0 +1,10 @@
+.animate-box {
+	width: 100px;
+	height: 100px;
+	background-color: lightcoral;
+	transition: 0.3s steps(2, end);
+	}
+
+.animate-box:hover {
+	transform: scale(1.5);
+}
