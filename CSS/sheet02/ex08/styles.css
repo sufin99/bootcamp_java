@@ -1,0 +1,10 @@
+.bounce-box {
+	width: 100px;
+	height: 100px;
+	background-color: lightgreen;
+	animation-name: bounce;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+}
+
