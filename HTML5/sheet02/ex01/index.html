@@ -1,0 +1,62 @@
+<!--EX. 01 Página con estructura básica
+Crea una página web en HTML5 con los siguientes requisitos:
+Estructura básica:
+Debe tener toda la estructura básica que hemos visto en clase indicando que el
+tipo de documento es HTML5 (recuerda indicar el idioma de la página, el
+charset y el título e indicarle que sea responsive)
+En el body meteremos la siguiente información:
+Un cabecera ( header ) conteniendo un h1 con el texto “Bienvenidos a Mi Página
+Web”
+Un párrafo que diga "Esta es una página de ejemplo para el ejercicio."
+Dos secciones:
+Una principal ( main ) que contendrá un subtítulo principal ( h2 ) con el texto
+“Acerca de nosotros” y un párrafo con el texto “Somos una empresa
+dedicada a ofrecer soluciones web.”
+Otra sección normal con
+Un subtítulo principal con el texto “Nuestros servicios”
+Una lista ordenada con viñetas de tipo abecedario que muestre tres
+servicios “Servicio 1”, “Servicio 2” y “Servicio 3”
+Un párrafo con un enlace con el texto “Ver más servicios” que abra la
+web http://google.es en una ventana/pestaña nueva.
+Un pie de página ( footer ) con el siguiente contenido:
+Enlace con texto “Enviar correo electrónico” que al hacer click envíe un
+correo electrónico a info@correo.es.
+Enlace con texto “Llamar por teléfono” que al hacer click haga una llamada
+de teléfono al +1234567890.
+Una frase con copyright incluyendo el carácter especial © seguido del texto
+“Jr Desarroladores, S.L. Todos los derechos reservados.”. Para insertar el
+símbolo del copyright haz uso de entidades, ya sea con código hexadecimal
+o decimal.-->
+
+<!DOCTYPE HTML5>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initil-scale=1.0">
+	<title>Esta es mi primera página web HTML5</title>
+</head>
+<body>
+	<header>
+		<h1>Bienvenidos a Mi página Web</h1>
+	</header>
+	<p>Esta es una página de ejemplo para el ejercicio.</p>
+	<main>
+		<h2>Acerca de nosotros</h2>
+		<p>Somos una empresa dedicada a ofrecer soluciones web.</p>
+	</main>
+	<section>
+		<h2>Nuestros servicios</h2>
+		<ol type="a">
+			<li>Servicio 1</li>
+			<li>Servicio 2</li>
+			<li>Servicio 3</li>
+		</ol>
+		<a href="http://google.es">Ver más servicios.</a>
+	</section>
+	<footer>
+		<p><a href="mailto:info@correo.es">Enviar correo electrónico</a></p>
+		<p><a href="tel:+1234567890">Llamar por teléfono</a></p>
+		<p> Jr Desarrolladores, S.L.&#169; Todos los derechos reservados.<p>
+	</footer>
+</body>
+</html>
