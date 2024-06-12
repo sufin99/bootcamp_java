@@ -1,0 +1,17 @@
+div {
+	display: flex;
+	margin: auto;
+}
+
+.item {
+	background-color: grey;
+	margin-left: 5px;
+	width: 500px;
+}
+
+@media screen and (max-width: 768px) {
+	div {
+		flex-direction: column;
+		margin-top: 5px;
+	}
+}
