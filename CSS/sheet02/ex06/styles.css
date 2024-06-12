@@ -1,0 +1,25 @@
+.grid-container {
+	display: grid;
+	grid-template-columns: 100px 100px 100px 100px;
+	grid-template-rows: 50px 50px 50px;
+}
+
+.large {
+	background-color: grey;
+	grid-column: span 2;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	margin-top: 5px;
+	padding-left: 35%;
+	padding-top: 5%;
+}
+
+.grid-item:nth-child(3), .grid-item:nth-child(4), .grid-item:nth-child(5), .grid-item:nth-child(6) {
+	background-color: grey;
+	grid-row: span 1;
+	margin-left: 5px;
+	margin-right: 5px;
+	padding-left: 25%;
+	padding-top: 15%;
+}
