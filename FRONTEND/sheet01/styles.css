@@ -1,0 +1,157 @@
+body {
+	background-color: #ffe62c;
+	margin: 0;
+}
+
+section {
+	position: relative;
+	width: 100%;
+	height: 750px;
+}
+
+.oreja {
+	position: fixed;
+	top: 0;
+	width: 0;
+	height: 0;
+	border-style: solid;
+}
+
+.oreja.left {
+	left: 0;
+	border-width: 0px 50px 50px 0px;
+	border-color: transparent transparent black transparent;
+	transform: rotate(90deg);
+}
+
+.oreja.right {
+	right: 0;
+	border-width: 50px 0px 0px 50px;
+	border-color: transparent transparent transparent black;
+	transform: rotate(180deg);
+}
+
+.moflete {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 3.125rem;
+	overflow: hidden;
+	z-index: 2;
+}
+
+.moflete::before,.moflete::after {
+	background: red;
+	border-radius: 50%;
+	content: '';
+	height: 6.25rem;
+	position: absolute;
+	top: 0;
+	width: 6.25rem;
+}
+
+.moflete::before {
+	left: -3.125rem;
+}
+
+.moflete::after {
+	right: -3.125rem;
+}
+
+.pokemon-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 20px;
+	padding: 10px;
+}
+
+.pokemon-card {
+	background-color: #ffffff;
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+	position: relative;
+	align-items: center;
+	justify-content: start;
+	top: 100px;
+	padding: 20px;
+	height: 200px;
+	width: 100%;
+	max-width: 140px;
+}
+
+.pokemon-id {
+	background-color: #d1cdca;
+	position: absolute;
+	top: 43%;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+	height: 5px;
+	width: auto;
+	min-width: 50px;
+	z-index: 3;
+}
+
+.pokemon-img {
+	background-color: #dfdfdf;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+	height: 45%;
+	width: 89%;
+	z-index: 1;
+	overflow-wrap: break-word;
+	word-break: break-all;
+	white-space: normal;
+}
+
+.pokemon-name {
+	background-color: #ffffff;
+	position: absolute;
+	top: 55%;
+	left: 8%;
+	display: flex;
+/*	justify-content: center;
+	align-items: center;*/
+	padding: 10px;
+	height: 10px;
+	width: auto;
+	min-width: 70px;
+	z-index: 3;
+}
+
+.pokemon-types {
+	background-color: #ffffff;
+	position: absolute;
+	bottom: 27%;
+	left: 8%;
+	display: flex;
+/*	justify-content: center;
+	align-items: center;*/
+	padding: 10px;
+	height: 5px;
+	width: auto;
+	min-width: 70px;
+	z-index: 2;
+}
+
+.pokemon-preevolution {
+	background-color: #ffffff;
+	position: absolute;
+	bottom: 10%;
+	left: 8%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+	height: 5px;
+	width: auto;
+	min-width: 70px;
+	z-index: 3;
+}
