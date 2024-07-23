@@ -4,15 +4,23 @@ pregunta al usuario) y devuelva su suma. Llama a esta función desde el método
 main y muestra el resultado. Llama a la clase Funciones .*/
 
 public class Funciones {
-	public static void main(String[] args) {
-		int s = 5;
-		int z = 9;
-		int total = sum(s, z);
-		System.out.println("El total es: " + total);
+	public static int sum(String[] args) {
+		int i = 0;
+		int total = 0;
+		while (i < args.length)
+		{
+			total += Integer.parseInt(args[i]);
+			i++;
+		}
+		return (total);
 	}
-
-	public static int sum(int a, int b) {
-		int y = a + b;
-		return (y);
+	public static void main(String[] args) {
+		if (args.length < 2)
+		{
+			System.out.println("Introduce minimo 2 num.");
+			return ;
+		}
+		int total = sum(args);
+		System.out.println("El total es: " + total);
 	}
 }
